@@ -1,0 +1,46 @@
+# ── Ablation A: Augmentation 변화 ──
+# 실험 A1: crop만
+- exp_name: aug_crop_only
+  augmentation: ablation
+  aug_kwargs:
+    image_size: 32
+    use_crop: true
+    use_color: false
+    use_grayscale: false
+    use_blur: false
+
+# 실험 A2: color jitter만
+- exp_name: aug_color_only
+  augmentation: ablation
+  aug_kwargs:
+    image_size: 32
+    use_crop: false
+    use_color: true
+    use_grayscale: false
+    use_blur: false
+
+# 실험 A3: crop + color (no grayscale)
+- exp_name: aug_crop_color
+  augmentation: ablation
+  aug_kwargs:
+    image_size: 32
+    use_crop: true
+    use_color: true
+    use_grayscale: false
+    use_blur: false
+
+# 실험 A4: full augmentation (baseline)
+- exp_name: aug_full
+  augmentation: full
+  aug_kwargs:
+    image_size: 32
+    s: 1.0
+    gaussian_blur: false
+
+# 실험 A5: full + gaussian blur
+- exp_name: aug_full_blur
+  augmentation: full
+  aug_kwargs:
+    image_size: 32
+    s: 1.0
+    gaussian_blur: true

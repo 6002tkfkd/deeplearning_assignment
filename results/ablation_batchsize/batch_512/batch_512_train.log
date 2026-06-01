@@ -1,0 +1,236 @@
+[2026-05-29 23:20:16] Training started
+config: {
+  "exp_name": "batch_512",
+  "arch": "resnet18",
+  "cifar_stem": true,
+  "pretrained": false,
+  "epochs": 200,
+  "batch_size": 512,
+  "lr": 0.03,
+  "weight_decay": 0.0001,
+  "num_workers": 4,
+  "save_freq": 50,
+  "data_root": "./data/cifar10",
+  "augmentation": "full",
+  "aug_kwargs": {
+    "image_size": 32,
+    "s": 1.0,
+    "gaussian_blur": false
+  },
+  "loss_type": "nt_xent",
+  "loss_kwargs": {
+    "temperature": 0.07,
+    "device": "cuda"
+  },
+  "proj_hidden_dim": 2048,
+  "proj_output_dim": 128,
+  "proj_num_layers": 2,
+  "eval_batch_size": 256,
+  "probe_epochs": 100,
+  "save_dir": "./results/ablation_batchsize/batch_512"
+}
+------------------------------------------------------------
+epoch    1/200 | loss 6.6697 | lr 0.06000 <-- BEST (epoch 1, loss 6.6697)
+epoch    2/200 | loss 6.3149 | lr 0.05999 <-- BEST (epoch 2, loss 6.3149)
+epoch    3/200 | loss 6.0073 | lr 0.05997 <-- BEST (epoch 3, loss 6.0073)
+epoch    4/200 | loss 5.6081 | lr 0.05994 <-- BEST (epoch 4, loss 5.6081)
+epoch    5/200 | loss 5.2125 | lr 0.05991 <-- BEST (epoch 5, loss 5.2125)
+epoch    6/200 | loss 4.6609 | lr 0.05987 <-- BEST (epoch 6, loss 4.6609)
+epoch    7/200 | loss 4.1934 | lr 0.05982 <-- BEST (epoch 7, loss 4.1934)
+epoch    8/200 | loss 3.6828 | lr 0.05976 <-- BEST (epoch 8, loss 3.6828)
+epoch    9/200 | loss 3.2932 | lr 0.05970 <-- BEST (epoch 9, loss 3.2932)
+epoch   10/200 | loss 2.9415 | lr 0.05963 <-- BEST (epoch 10, loss 2.9415)
+epoch   11/200 | loss 2.6872 | lr 0.05955 <-- BEST (epoch 11, loss 2.6872)
+epoch   12/200 | loss 2.3784 | lr 0.05947 <-- BEST (epoch 12, loss 2.3784)
+epoch   13/200 | loss 2.1974 | lr 0.05938 <-- BEST (epoch 13, loss 2.1974)
+epoch   14/200 | loss 2.0685 | lr 0.05928 <-- BEST (epoch 14, loss 2.0685)
+epoch   15/200 | loss 2.0383 | lr 0.05917 <-- BEST (epoch 15, loss 2.0383)
+epoch   16/200 | loss 1.9386 | lr 0.05906 <-- BEST (epoch 16, loss 1.9386)
+epoch   17/200 | loss 1.8460 | lr 0.05894 <-- BEST (epoch 17, loss 1.8460)
+epoch   18/200 | loss 1.6664 | lr 0.05881 <-- BEST (epoch 18, loss 1.6664)
+epoch   19/200 | loss 1.5879 | lr 0.05867 <-- BEST (epoch 19, loss 1.5879)
+epoch   20/200 | loss 1.4774 | lr 0.05853 <-- BEST (epoch 20, loss 1.4774)
+epoch   21/200 | loss 1.4298 | lr 0.05838 <-- BEST (epoch 21, loss 1.4298)
+epoch   22/200 | loss 1.3777 | lr 0.05823 <-- BEST (epoch 22, loss 1.3777)
+epoch   23/200 | loss 1.3264 | lr 0.05806 <-- BEST (epoch 23, loss 1.3264)
+epoch   24/200 | loss 1.2704 | lr 0.05789 <-- BEST (epoch 24, loss 1.2704)
+epoch   25/200 | loss 1.2349 | lr 0.05772 <-- BEST (epoch 25, loss 1.2349)
+epoch   26/200 | loss 1.2284 | lr 0.05753 <-- BEST (epoch 26, loss 1.2284)
+epoch   27/200 | loss 1.1756 | lr 0.05734 <-- BEST (epoch 27, loss 1.1756)
+epoch   28/200 | loss 1.1426 | lr 0.05714 <-- BEST (epoch 28, loss 1.1426)
+epoch   29/200 | loss 1.1060 | lr 0.05694 <-- BEST (epoch 29, loss 1.1060)
+epoch   30/200 | loss 1.0922 | lr 0.05673 <-- BEST (epoch 30, loss 1.0922)
+epoch   31/200 | loss 1.0398 | lr 0.05651 <-- BEST (epoch 31, loss 1.0398)
+epoch   32/200 | loss 1.0484 | lr 0.05629
+epoch   33/200 | loss 1.0277 | lr 0.05606 <-- BEST (epoch 33, loss 1.0277)
+epoch   34/200 | loss 1.0061 | lr 0.05582 <-- BEST (epoch 34, loss 1.0061)
+epoch   35/200 | loss 0.9943 | lr 0.05558 <-- BEST (epoch 35, loss 0.9943)
+epoch   36/200 | loss 0.9736 | lr 0.05533 <-- BEST (epoch 36, loss 0.9736)
+epoch   37/200 | loss 0.9480 | lr 0.05507 <-- BEST (epoch 37, loss 0.9480)
+epoch   38/200 | loss 0.9278 | lr 0.05481 <-- BEST (epoch 38, loss 0.9278)
+epoch   39/200 | loss 0.9268 | lr 0.05454 <-- BEST (epoch 39, loss 0.9268)
+epoch   40/200 | loss 0.9206 | lr 0.05427 <-- BEST (epoch 40, loss 0.9206)
+epoch   41/200 | loss 0.8925 | lr 0.05399 <-- BEST (epoch 41, loss 0.8925)
+epoch   42/200 | loss 0.8769 | lr 0.05370 <-- BEST (epoch 42, loss 0.8769)
+epoch   43/200 | loss 0.8703 | lr 0.05341 <-- BEST (epoch 43, loss 0.8703)
+epoch   44/200 | loss 0.8525 | lr 0.05312 <-- BEST (epoch 44, loss 0.8525)
+epoch   45/200 | loss 0.8427 | lr 0.05281 <-- BEST (epoch 45, loss 0.8427)
+epoch   46/200 | loss 0.8265 | lr 0.05250 <-- BEST (epoch 46, loss 0.8265)
+epoch   47/200 | loss 0.8226 | lr 0.05219 <-- BEST (epoch 47, loss 0.8226)
+epoch   48/200 | loss 0.8105 | lr 0.05187 <-- BEST (epoch 48, loss 0.8105)
+epoch   49/200 | loss 0.7954 | lr 0.05154 <-- BEST (epoch 49, loss 0.7954)
+epoch   50/200 | loss 0.7908 | lr 0.05121 <-- BEST (epoch 50, loss 0.7908)
+epoch   51/200 | loss 0.7800 | lr 0.05088 <-- BEST (epoch 51, loss 0.7800)
+epoch   52/200 | loss 0.7781 | lr 0.05054 <-- BEST (epoch 52, loss 0.7781)
+epoch   53/200 | loss 0.7728 | lr 0.05019 <-- BEST (epoch 53, loss 0.7728)
+epoch   54/200 | loss 0.7616 | lr 0.04984 <-- BEST (epoch 54, loss 0.7616)
+epoch   55/200 | loss 0.7506 | lr 0.04948 <-- BEST (epoch 55, loss 0.7506)
+epoch   56/200 | loss 0.7535 | lr 0.04912
+epoch   57/200 | loss 0.7501 | lr 0.04876 <-- BEST (epoch 57, loss 0.7501)
+epoch   58/200 | loss 0.7209 | lr 0.04839 <-- BEST (epoch 58, loss 0.7209)
+epoch   59/200 | loss 0.7151 | lr 0.04801 <-- BEST (epoch 59, loss 0.7151)
+epoch   60/200 | loss 0.7090 | lr 0.04763 <-- BEST (epoch 60, loss 0.7090)
+epoch   61/200 | loss 0.7081 | lr 0.04725 <-- BEST (epoch 61, loss 0.7081)
+epoch   62/200 | loss 0.6883 | lr 0.04686 <-- BEST (epoch 62, loss 0.6883)
+epoch   63/200 | loss 0.6802 | lr 0.04647 <-- BEST (epoch 63, loss 0.6802)
+epoch   64/200 | loss 0.7002 | lr 0.04607
+epoch   65/200 | loss 0.6844 | lr 0.04567
+epoch   66/200 | loss 0.6813 | lr 0.04527
+epoch   67/200 | loss 0.6762 | lr 0.04486 <-- BEST (epoch 67, loss 0.6762)
+epoch   68/200 | loss 0.6699 | lr 0.04445 <-- BEST (epoch 68, loss 0.6699)
+epoch   69/200 | loss 0.6705 | lr 0.04404
+epoch   70/200 | loss 0.6653 | lr 0.04362 <-- BEST (epoch 70, loss 0.6653)
+epoch   71/200 | loss 0.6541 | lr 0.04320 <-- BEST (epoch 71, loss 0.6541)
+epoch   72/200 | loss 0.6486 | lr 0.04277 <-- BEST (epoch 72, loss 0.6486)
+epoch   73/200 | loss 0.6399 | lr 0.04235 <-- BEST (epoch 73, loss 0.6399)
+epoch   74/200 | loss 0.6345 | lr 0.04191 <-- BEST (epoch 74, loss 0.6345)
+epoch   75/200 | loss 0.6440 | lr 0.04148
+epoch   76/200 | loss 0.6283 | lr 0.04104 <-- BEST (epoch 76, loss 0.6283)
+epoch   77/200 | loss 0.6362 | lr 0.04060
+epoch   78/200 | loss 0.6279 | lr 0.04016 <-- BEST (epoch 78, loss 0.6279)
+epoch   79/200 | loss 0.6193 | lr 0.03972 <-- BEST (epoch 79, loss 0.6193)
+epoch   80/200 | loss 0.6051 | lr 0.03927 <-- BEST (epoch 80, loss 0.6051)
+epoch   81/200 | loss 0.5906 | lr 0.03882 <-- BEST (epoch 81, loss 0.5906)
+epoch   82/200 | loss 0.5996 | lr 0.03837
+epoch   83/200 | loss 0.6013 | lr 0.03792
+epoch   84/200 | loss 0.5999 | lr 0.03746
+epoch   85/200 | loss 0.5908 | lr 0.03700
+epoch   86/200 | loss 0.5845 | lr 0.03654 <-- BEST (epoch 86, loss 0.5845)
+epoch   87/200 | loss 0.5843 | lr 0.03608 <-- BEST (epoch 87, loss 0.5843)
+epoch   88/200 | loss 0.5838 | lr 0.03562 <-- BEST (epoch 88, loss 0.5838)
+epoch   89/200 | loss 0.5728 | lr 0.03516 <-- BEST (epoch 89, loss 0.5728)
+epoch   90/200 | loss 0.5690 | lr 0.03469 <-- BEST (epoch 90, loss 0.5690)
+epoch   91/200 | loss 0.5620 | lr 0.03423 <-- BEST (epoch 91, loss 0.5620)
+epoch   92/200 | loss 0.5648 | lr 0.03376
+epoch   93/200 | loss 0.5599 | lr 0.03329 <-- BEST (epoch 93, loss 0.5599)
+epoch   94/200 | loss 0.5591 | lr 0.03282 <-- BEST (epoch 94, loss 0.5591)
+epoch   95/200 | loss 0.5565 | lr 0.03235 <-- BEST (epoch 95, loss 0.5565)
+epoch   96/200 | loss 0.5528 | lr 0.03188 <-- BEST (epoch 96, loss 0.5528)
+epoch   97/200 | loss 0.5521 | lr 0.03141 <-- BEST (epoch 97, loss 0.5521)
+epoch   98/200 | loss 0.5486 | lr 0.03094 <-- BEST (epoch 98, loss 0.5486)
+epoch   99/200 | loss 0.5557 | lr 0.03047
+epoch  100/200 | loss 0.5342 | lr 0.03000 <-- BEST (epoch 100, loss 0.5342)
+epoch  101/200 | loss 0.5354 | lr 0.02953
+epoch  102/200 | loss 0.5322 | lr 0.02906 <-- BEST (epoch 102, loss 0.5322)
+epoch  103/200 | loss 0.5368 | lr 0.02859
+epoch  104/200 | loss 0.5254 | lr 0.02812 <-- BEST (epoch 104, loss 0.5254)
+epoch  105/200 | loss 0.5266 | lr 0.02765
+epoch  106/200 | loss 0.5222 | lr 0.02718 <-- BEST (epoch 106, loss 0.5222)
+epoch  107/200 | loss 0.5191 | lr 0.02671 <-- BEST (epoch 107, loss 0.5191)
+epoch  108/200 | loss 0.5229 | lr 0.02624
+epoch  109/200 | loss 0.5201 | lr 0.02577
+epoch  110/200 | loss 0.5108 | lr 0.02531 <-- BEST (epoch 110, loss 0.5108)
+epoch  111/200 | loss 0.5107 | lr 0.02484 <-- BEST (epoch 111, loss 0.5107)
+epoch  112/200 | loss 0.5137 | lr 0.02438
+epoch  113/200 | loss 0.5025 | lr 0.02392 <-- BEST (epoch 113, loss 0.5025)
+epoch  114/200 | loss 0.5009 | lr 0.02346 <-- BEST (epoch 114, loss 0.5009)
+epoch  115/200 | loss 0.4990 | lr 0.02300 <-- BEST (epoch 115, loss 0.4990)
+epoch  116/200 | loss 0.4981 | lr 0.02254 <-- BEST (epoch 116, loss 0.4981)
+epoch  117/200 | loss 0.4889 | lr 0.02208 <-- BEST (epoch 117, loss 0.4889)
+epoch  118/200 | loss 0.4881 | lr 0.02163 <-- BEST (epoch 118, loss 0.4881)
+epoch  119/200 | loss 0.4810 | lr 0.02118 <-- BEST (epoch 119, loss 0.4810)
+epoch  120/200 | loss 0.4829 | lr 0.02073
+epoch  121/200 | loss 0.4823 | lr 0.02028
+epoch  122/200 | loss 0.4848 | lr 0.01984
+epoch  123/200 | loss 0.4794 | lr 0.01940 <-- BEST (epoch 123, loss 0.4794)
+epoch  124/200 | loss 0.4748 | lr 0.01896 <-- BEST (epoch 124, loss 0.4748)
+epoch  125/200 | loss 0.4772 | lr 0.01852
+epoch  126/200 | loss 0.4743 | lr 0.01809 <-- BEST (epoch 126, loss 0.4743)
+epoch  127/200 | loss 0.4766 | lr 0.01765
+epoch  128/200 | loss 0.4624 | lr 0.01723 <-- BEST (epoch 128, loss 0.4624)
+epoch  129/200 | loss 0.4649 | lr 0.01680
+epoch  130/200 | loss 0.4626 | lr 0.01638
+epoch  131/200 | loss 0.4651 | lr 0.01596
+epoch  132/200 | loss 0.4566 | lr 0.01555 <-- BEST (epoch 132, loss 0.4566)
+epoch  133/200 | loss 0.4538 | lr 0.01514 <-- BEST (epoch 133, loss 0.4538)
+epoch  134/200 | loss 0.4542 | lr 0.01473
+epoch  135/200 | loss 0.4580 | lr 0.01433
+epoch  136/200 | loss 0.4488 | lr 0.01393 <-- BEST (epoch 136, loss 0.4488)
+epoch  137/200 | loss 0.4542 | lr 0.01353
+epoch  138/200 | loss 0.4510 | lr 0.01314
+epoch  139/200 | loss 0.4348 | lr 0.01275 <-- BEST (epoch 139, loss 0.4348)
+epoch  140/200 | loss 0.4441 | lr 0.01237
+epoch  141/200 | loss 0.4411 | lr 0.01199
+epoch  142/200 | loss 0.4444 | lr 0.01161
+epoch  143/200 | loss 0.4337 | lr 0.01124 <-- BEST (epoch 143, loss 0.4337)
+epoch  144/200 | loss 0.4388 | lr 0.01088
+epoch  145/200 | loss 0.4349 | lr 0.01052
+epoch  146/200 | loss 0.4337 | lr 0.01016
+epoch  147/200 | loss 0.4386 | lr 0.00981
+epoch  148/200 | loss 0.4236 | lr 0.00946 <-- BEST (epoch 148, loss 0.4236)
+epoch  149/200 | loss 0.4215 | lr 0.00912 <-- BEST (epoch 149, loss 0.4215)
+epoch  150/200 | loss 0.4223 | lr 0.00879
+epoch  151/200 | loss 0.4276 | lr 0.00846
+epoch  152/200 | loss 0.4241 | lr 0.00813
+epoch  153/200 | loss 0.4244 | lr 0.00781
+epoch  154/200 | loss 0.4205 | lr 0.00750 <-- BEST (epoch 154, loss 0.4205)
+epoch  155/200 | loss 0.4220 | lr 0.00719
+epoch  156/200 | loss 0.4158 | lr 0.00688 <-- BEST (epoch 156, loss 0.4158)
+epoch  157/200 | loss 0.4196 | lr 0.00659
+epoch  158/200 | loss 0.4147 | lr 0.00630 <-- BEST (epoch 158, loss 0.4147)
+epoch  159/200 | loss 0.4099 | lr 0.00601 <-- BEST (epoch 159, loss 0.4099)
+epoch  160/200 | loss 0.4131 | lr 0.00573
+epoch  161/200 | loss 0.4132 | lr 0.00546
+epoch  162/200 | loss 0.4118 | lr 0.00519
+epoch  163/200 | loss 0.4085 | lr 0.00493 <-- BEST (epoch 163, loss 0.4085)
+epoch  164/200 | loss 0.4108 | lr 0.00467
+epoch  165/200 | loss 0.4081 | lr 0.00442 <-- BEST (epoch 165, loss 0.4081)
+epoch  166/200 | loss 0.4039 | lr 0.00418 <-- BEST (epoch 166, loss 0.4039)
+epoch  167/200 | loss 0.4114 | lr 0.00394
+epoch  168/200 | loss 0.4040 | lr 0.00371
+epoch  169/200 | loss 0.4021 | lr 0.00349 <-- BEST (epoch 169, loss 0.4021)
+epoch  170/200 | loss 0.4032 | lr 0.00327
+epoch  171/200 | loss 0.4051 | lr 0.00306
+epoch  172/200 | loss 0.4061 | lr 0.00286
+epoch  173/200 | loss 0.4010 | lr 0.00266 <-- BEST (epoch 173, loss 0.4010)
+epoch  174/200 | loss 0.4032 | lr 0.00247
+epoch  175/200 | loss 0.3960 | lr 0.00228 <-- BEST (epoch 175, loss 0.3960)
+epoch  176/200 | loss 0.3999 | lr 0.00211
+epoch  177/200 | loss 0.4000 | lr 0.00194
+epoch  178/200 | loss 0.3896 | lr 0.00177 <-- BEST (epoch 178, loss 0.3896)
+epoch  179/200 | loss 0.3974 | lr 0.00162
+epoch  180/200 | loss 0.4019 | lr 0.00147
+epoch  181/200 | loss 0.3966 | lr 0.00133
+epoch  182/200 | loss 0.3989 | lr 0.00119
+epoch  183/200 | loss 0.4012 | lr 0.00106
+epoch  184/200 | loss 0.3940 | lr 0.00094
+epoch  185/200 | loss 0.4075 | lr 0.00083
+epoch  186/200 | loss 0.3949 | lr 0.00072
+epoch  187/200 | loss 0.3985 | lr 0.00062
+epoch  188/200 | loss 0.3935 | lr 0.00053
+epoch  189/200 | loss 0.3993 | lr 0.00045
+epoch  190/200 | loss 0.3965 | lr 0.00037
+epoch  191/200 | loss 0.3992 | lr 0.00030
+epoch  192/200 | loss 0.3971 | lr 0.00024
+epoch  193/200 | loss 0.3872 | lr 0.00018 <-- BEST (epoch 193, loss 0.3872)
+epoch  194/200 | loss 0.3996 | lr 0.00013
+epoch  195/200 | loss 0.3974 | lr 0.00009
+epoch  196/200 | loss 0.3906 | lr 0.00006
+epoch  197/200 | loss 0.3889 | lr 0.00003
+epoch  198/200 | loss 0.3908 | lr 0.00001
+epoch  199/200 | loss 0.3896 | lr 0.00000
+epoch  200/200 | loss 0.3916 | lr 0.00000
+------------------------------------------------------------
+[2026-05-30 00:42:13] Training finished
+best epoch : 193
+best loss  : 0.3872

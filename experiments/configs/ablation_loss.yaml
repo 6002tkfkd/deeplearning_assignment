@@ -1,0 +1,16 @@
+# ── Ablation F: Loss Function 변화 ──
+- exp_name: loss_ntxent
+  loss_type: nt_xent
+  loss_kwargs:
+    temperature: 0.07
+
+- exp_name: loss_barlow
+  loss_type: barlow_twins
+  loss_kwargs:
+    lambda_coeff: 5.0e-3
+    projection_dim: 128
+
+- exp_name: loss_simsiam
+  loss_type: simsiam
+  loss_kwargs: {}
+  # SimSiam은 predictor head가 필요 — run_experiment.py에서 처리

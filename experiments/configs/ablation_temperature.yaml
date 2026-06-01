@@ -1,0 +1,16 @@
+# ── Ablation D: Temperature 변화 ──
+- exp_name: temp_005
+  loss_kwargs:
+    temperature: 0.05
+
+- exp_name: temp_007
+  loss_kwargs:
+    temperature: 0.07
+
+- exp_name: temp_010
+  loss_kwargs:
+    temperature: 0.10
+
+- exp_name: temp_050
+  loss_kwargs:
+    temperature: 0.50

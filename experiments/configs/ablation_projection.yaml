@@ -1,0 +1,15 @@
+# ── Ablation B: Projection Head 깊이 변화 ──
+- exp_name: proj_1layer
+  proj_num_layers: 1
+  proj_hidden_dim: 2048
+  proj_output_dim: 128
+
+- exp_name: proj_2layer
+  proj_num_layers: 2
+  proj_hidden_dim: 2048
+  proj_output_dim: 128
+
+- exp_name: proj_3layer
+  proj_num_layers: 3
+  proj_hidden_dim: 2048
+  proj_output_dim: 128

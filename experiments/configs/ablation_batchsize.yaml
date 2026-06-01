@@ -1,0 +1,13 @@
+# ── Ablation C: Batch Size 변화 ──
+# 작은 batch size → representation collapse 위험 증가
+- exp_name: batch_64
+  batch_size: 64
+
+- exp_name: batch_128
+  batch_size: 128
+
+- exp_name: batch_256
+  batch_size: 256
+
+- exp_name: batch_512
+  batch_size: 512

@@ -1,0 +1,37 @@
+# ── 기본 SimCLR 설정 (다른 config가 이 값을 기준으로 변경) ──
+exp_name: simclr_base
+arch: resnet18
+cifar_stem: true
+pretrained: false
+
+# training
+epochs: 200
+batch_size: 256
+lr: 0.03
+weight_decay: 1.0e-4
+num_workers: 4
+save_freq: 50
+
+# data
+data_root: ./data/cifar10
+augmentation: full
+aug_kwargs:
+  image_size: 32
+  s: 1.0
+  gaussian_blur: false
+
+# loss
+loss_type: nt_xent
+loss_kwargs:
+  temperature: 0.07
+
+# projection head
+proj_hidden_dim: 2048
+proj_output_dim: 128
+proj_num_layers: 2
+
+# evaluation
+eval_batch_size: 256
+probe_epochs: 100
+
+save_dir: ./results

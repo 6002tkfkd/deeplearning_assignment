@@ -1,0 +1,9 @@
+# ── Ablation E: Backbone 크기 변화 ──
+- exp_name: backbone_resnet18
+  arch: resnet18
+
+- exp_name: backbone_resnet34
+  arch: resnet34
+
+- exp_name: backbone_resnet50
+  arch: resnet50

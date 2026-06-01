@@ -1,0 +1,6 @@
+# ablation 파이프라인 동작 확인용 (5 epoch)
+- exp_name: test_batch_64
+  batch_size: 64
+  epochs: 5
+  save_freq: 5
+  probe_epochs: 3

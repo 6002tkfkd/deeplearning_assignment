@@ -1,0 +1,46 @@
+{
+  "best_acc": 0.8032,
+  "history": [
+    {
+      "epoch": 10,
+      "acc": 0.7797
+    },
+    {
+      "epoch": 20,
+      "acc": 0.7864
+    },
+    {
+      "epoch": 30,
+      "acc": 0.7931
+    },
+    {
+      "epoch": 40,
+      "acc": 0.7972
+    },
+    {
+      "epoch": 50,
+      "acc": 0.7999
+    },
+    {
+      "epoch": 60,
+      "acc": 0.8017
+    },
+    {
+      "epoch": 70,
+      "acc": 0.8017
+    },
+    {
+      "epoch": 80,
+      "acc": 0.8032
+    },
+    {
+      "epoch": 90,
+      "acc": 0.8027
+    },
+    {
+      "epoch": 100,
+      "acc": 0.8025
+    }
+  ],
+  "exp_name": "backbone_resnet34"
+}

@@ -1,0 +1,14 @@
+# 모델 체크포인트
+*.pt
+
+# 데이터셋
+data/cifar10/cifar-10-batches-py/
+data/cifar10/cifar-10-python.tar.gz
+
+# Python 캐시
+__pycache__/
+*.pyc
+*.pyo
+
+# 로그
+nohup.out

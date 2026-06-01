@@ -1,0 +1,2 @@
+exp_name,linear_probe,knn_k200,silhouette,davies_bouldin,effective_rank,uniformity
+simclr_base,0.8003,0.7571,0.039262641221284866,4.996201581499886,307.3435974121094,-1.0528582334518433

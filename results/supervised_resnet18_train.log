@@ -1,0 +1,217 @@
+[2026-05-29 07:03:33] Training started
+config: {
+  "exp_name": "supervised_resnet18",
+  "arch": "resnet18",
+  "cifar_stem": true,
+  "epochs": 200,
+  "batch_size": 256,
+  "lr": 0.1,
+  "num_workers": 4,
+  "data_root": "./data/cifar10",
+  "save_dir": "./results"
+}
+------------------------------------------------------------
+epoch    1/200 | loss 2.2437 | train_acc 0.2035 | test_acc 0.3251 <-- BEST (epoch 1, test_acc 0.3251)
+epoch    2/200 | loss 1.6160 | train_acc 0.3938 | test_acc 0.4423 <-- BEST (epoch 2, test_acc 0.4423)
+epoch    3/200 | loss 1.3071 | train_acc 0.5185 | test_acc 0.5285 <-- BEST (epoch 3, test_acc 0.5285)
+epoch    4/200 | loss 1.0457 | train_acc 0.6257 | test_acc 0.6554 <-- BEST (epoch 4, test_acc 0.6554)
+epoch    5/200 | loss 0.8572 | train_acc 0.6953 | test_acc 0.6475
+epoch    6/200 | loss 0.7295 | train_acc 0.7434 | test_acc 0.7213 <-- BEST (epoch 6, test_acc 0.7213)
+epoch    7/200 | loss 0.6211 | train_acc 0.7809 | test_acc 0.7473 <-- BEST (epoch 7, test_acc 0.7473)
+epoch    8/200 | loss 0.5521 | train_acc 0.8091 | test_acc 0.7686 <-- BEST (epoch 8, test_acc 0.7686)
+epoch    9/200 | loss 0.4966 | train_acc 0.8263 | test_acc 0.7908 <-- BEST (epoch 9, test_acc 0.7908)
+epoch   10/200 | loss 0.4566 | train_acc 0.8417 | test_acc 0.7460
+epoch   11/200 | loss 0.4286 | train_acc 0.8518 | test_acc 0.8373 <-- BEST (epoch 11, test_acc 0.8373)
+epoch   12/200 | loss 0.4067 | train_acc 0.8586 | test_acc 0.7943
+epoch   13/200 | loss 0.3874 | train_acc 0.8655 | test_acc 0.8227
+epoch   14/200 | loss 0.3633 | train_acc 0.8757 | test_acc 0.8387 <-- BEST (epoch 14, test_acc 0.8387)
+epoch   15/200 | loss 0.3444 | train_acc 0.8804 | test_acc 0.8293
+epoch   16/200 | loss 0.3346 | train_acc 0.8842 | test_acc 0.8462 <-- BEST (epoch 16, test_acc 0.8462)
+epoch   17/200 | loss 0.3269 | train_acc 0.8870 | test_acc 0.8570 <-- BEST (epoch 17, test_acc 0.8570)
+epoch   18/200 | loss 0.3114 | train_acc 0.8939 | test_acc 0.8559
+epoch   19/200 | loss 0.3116 | train_acc 0.8934 | test_acc 0.8226
+epoch   20/200 | loss 0.3047 | train_acc 0.8950 | test_acc 0.8460
+epoch   21/200 | loss 0.2867 | train_acc 0.9012 | test_acc 0.8453
+epoch   22/200 | loss 0.2883 | train_acc 0.9005 | test_acc 0.8294
+epoch   23/200 | loss 0.2845 | train_acc 0.9031 | test_acc 0.8415
+epoch   24/200 | loss 0.2770 | train_acc 0.9035 | test_acc 0.8252
+epoch   25/200 | loss 0.2671 | train_acc 0.9083 | test_acc 0.8556
+epoch   26/200 | loss 0.2682 | train_acc 0.9068 | test_acc 0.8462
+epoch   27/200 | loss 0.2548 | train_acc 0.9118 | test_acc 0.8338
+epoch   28/200 | loss 0.2510 | train_acc 0.9137 | test_acc 0.8648 <-- BEST (epoch 28, test_acc 0.8648)
+epoch   29/200 | loss 0.2463 | train_acc 0.9147 | test_acc 0.8599
+epoch   30/200 | loss 0.2493 | train_acc 0.9144 | test_acc 0.8256
+epoch   31/200 | loss 0.2386 | train_acc 0.9183 | test_acc 0.8501
+epoch   32/200 | loss 0.2358 | train_acc 0.9174 | test_acc 0.8656 <-- BEST (epoch 32, test_acc 0.8656)
+epoch   33/200 | loss 0.2347 | train_acc 0.9209 | test_acc 0.8426
+epoch   34/200 | loss 0.2311 | train_acc 0.9207 | test_acc 0.8584
+epoch   35/200 | loss 0.2260 | train_acc 0.9236 | test_acc 0.8675 <-- BEST (epoch 35, test_acc 0.8675)
+epoch   36/200 | loss 0.2297 | train_acc 0.9199 | test_acc 0.8334
+epoch   37/200 | loss 0.2259 | train_acc 0.9223 | test_acc 0.8620
+epoch   38/200 | loss 0.2172 | train_acc 0.9246 | test_acc 0.8735 <-- BEST (epoch 38, test_acc 0.8735)
+epoch   39/200 | loss 0.2151 | train_acc 0.9266 | test_acc 0.8560
+epoch   40/200 | loss 0.2095 | train_acc 0.9278 | test_acc 0.8838 <-- BEST (epoch 40, test_acc 0.8838)
+epoch   41/200 | loss 0.2119 | train_acc 0.9266 | test_acc 0.8665
+epoch   42/200 | loss 0.2067 | train_acc 0.9281 | test_acc 0.8450
+epoch   43/200 | loss 0.2082 | train_acc 0.9281 | test_acc 0.8278
+epoch   44/200 | loss 0.2101 | train_acc 0.9275 | test_acc 0.8696
+epoch   45/200 | loss 0.2011 | train_acc 0.9305 | test_acc 0.8709
+epoch   46/200 | loss 0.2011 | train_acc 0.9308 | test_acc 0.8806
+epoch   47/200 | loss 0.1931 | train_acc 0.9333 | test_acc 0.8322
+epoch   48/200 | loss 0.1990 | train_acc 0.9323 | test_acc 0.8488
+epoch   49/200 | loss 0.1871 | train_acc 0.9350 | test_acc 0.8725
+epoch   50/200 | loss 0.1878 | train_acc 0.9345 | test_acc 0.8688
+epoch   51/200 | loss 0.1922 | train_acc 0.9332 | test_acc 0.8814
+epoch   52/200 | loss 0.1829 | train_acc 0.9374 | test_acc 0.8804
+epoch   53/200 | loss 0.1887 | train_acc 0.9351 | test_acc 0.8885 <-- BEST (epoch 53, test_acc 0.8885)
+epoch   54/200 | loss 0.1864 | train_acc 0.9347 | test_acc 0.8625
+epoch   55/200 | loss 0.1814 | train_acc 0.9376 | test_acc 0.8564
+epoch   56/200 | loss 0.1814 | train_acc 0.9381 | test_acc 0.8843
+epoch   57/200 | loss 0.1771 | train_acc 0.9393 | test_acc 0.8791
+epoch   58/200 | loss 0.1690 | train_acc 0.9428 | test_acc 0.8707
+epoch   59/200 | loss 0.1755 | train_acc 0.9396 | test_acc 0.8782
+epoch   60/200 | loss 0.1640 | train_acc 0.9440 | test_acc 0.8885
+epoch   61/200 | loss 0.1714 | train_acc 0.9415 | test_acc 0.8720
+epoch   62/200 | loss 0.1705 | train_acc 0.9409 | test_acc 0.8678
+epoch   63/200 | loss 0.1638 | train_acc 0.9436 | test_acc 0.8869
+epoch   64/200 | loss 0.1651 | train_acc 0.9434 | test_acc 0.8833
+epoch   65/200 | loss 0.1602 | train_acc 0.9440 | test_acc 0.8949 <-- BEST (epoch 65, test_acc 0.8949)
+epoch   66/200 | loss 0.1600 | train_acc 0.9458 | test_acc 0.8836
+epoch   67/200 | loss 0.1549 | train_acc 0.9474 | test_acc 0.8627
+epoch   68/200 | loss 0.1661 | train_acc 0.9430 | test_acc 0.8873
+epoch   69/200 | loss 0.1556 | train_acc 0.9465 | test_acc 0.8437
+epoch   70/200 | loss 0.1531 | train_acc 0.9478 | test_acc 0.8853
+epoch   71/200 | loss 0.1550 | train_acc 0.9462 | test_acc 0.8730
+epoch   72/200 | loss 0.1464 | train_acc 0.9501 | test_acc 0.8818
+epoch   73/200 | loss 0.1427 | train_acc 0.9506 | test_acc 0.8795
+epoch   74/200 | loss 0.1500 | train_acc 0.9478 | test_acc 0.8780
+epoch   75/200 | loss 0.1449 | train_acc 0.9496 | test_acc 0.8915
+epoch   76/200 | loss 0.1440 | train_acc 0.9504 | test_acc 0.8663
+epoch   77/200 | loss 0.1405 | train_acc 0.9511 | test_acc 0.8891
+epoch   78/200 | loss 0.1428 | train_acc 0.9516 | test_acc 0.8937
+epoch   79/200 | loss 0.1384 | train_acc 0.9532 | test_acc 0.8932
+epoch   80/200 | loss 0.1352 | train_acc 0.9529 | test_acc 0.8617
+epoch   81/200 | loss 0.1357 | train_acc 0.9532 | test_acc 0.8799
+epoch   82/200 | loss 0.1332 | train_acc 0.9544 | test_acc 0.9004 <-- BEST (epoch 82, test_acc 0.9004)
+epoch   83/200 | loss 0.1295 | train_acc 0.9566 | test_acc 0.8853
+epoch   84/200 | loss 0.1316 | train_acc 0.9550 | test_acc 0.8891
+epoch   85/200 | loss 0.1244 | train_acc 0.9575 | test_acc 0.8951
+epoch   86/200 | loss 0.1232 | train_acc 0.9576 | test_acc 0.8583
+epoch   87/200 | loss 0.1287 | train_acc 0.9563 | test_acc 0.8914
+epoch   88/200 | loss 0.1197 | train_acc 0.9603 | test_acc 0.8902
+epoch   89/200 | loss 0.1221 | train_acc 0.9575 | test_acc 0.8890
+epoch   90/200 | loss 0.1131 | train_acc 0.9615 | test_acc 0.8895
+epoch   91/200 | loss 0.1186 | train_acc 0.9605 | test_acc 0.8856
+epoch   92/200 | loss 0.1131 | train_acc 0.9615 | test_acc 0.8991
+epoch   93/200 | loss 0.1116 | train_acc 0.9618 | test_acc 0.8867
+epoch   94/200 | loss 0.1128 | train_acc 0.9612 | test_acc 0.8833
+epoch   95/200 | loss 0.1042 | train_acc 0.9643 | test_acc 0.8808
+epoch   96/200 | loss 0.1071 | train_acc 0.9635 | test_acc 0.8992
+epoch   97/200 | loss 0.1021 | train_acc 0.9652 | test_acc 0.8941
+epoch   98/200 | loss 0.0997 | train_acc 0.9647 | test_acc 0.9025 <-- BEST (epoch 98, test_acc 0.9025)
+epoch   99/200 | loss 0.0997 | train_acc 0.9665 | test_acc 0.8616
+epoch  100/200 | loss 0.1012 | train_acc 0.9658 | test_acc 0.9038 <-- BEST (epoch 100, test_acc 0.9038)
+epoch  101/200 | loss 0.0995 | train_acc 0.9664 | test_acc 0.9080 <-- BEST (epoch 101, test_acc 0.9080)
+epoch  102/200 | loss 0.0958 | train_acc 0.9672 | test_acc 0.8783
+epoch  103/200 | loss 0.0938 | train_acc 0.9684 | test_acc 0.9093 <-- BEST (epoch 103, test_acc 0.9093)
+epoch  104/200 | loss 0.0868 | train_acc 0.9706 | test_acc 0.9022
+epoch  105/200 | loss 0.0881 | train_acc 0.9698 | test_acc 0.8968
+epoch  106/200 | loss 0.0806 | train_acc 0.9726 | test_acc 0.8971
+epoch  107/200 | loss 0.0864 | train_acc 0.9707 | test_acc 0.9011
+epoch  108/200 | loss 0.0817 | train_acc 0.9723 | test_acc 0.8799
+epoch  109/200 | loss 0.0898 | train_acc 0.9698 | test_acc 0.8981
+epoch  110/200 | loss 0.0796 | train_acc 0.9728 | test_acc 0.9058
+epoch  111/200 | loss 0.0857 | train_acc 0.9709 | test_acc 0.9051
+epoch  112/200 | loss 0.0784 | train_acc 0.9736 | test_acc 0.9165 <-- BEST (epoch 112, test_acc 0.9165)
+epoch  113/200 | loss 0.0726 | train_acc 0.9755 | test_acc 0.8971
+epoch  114/200 | loss 0.0772 | train_acc 0.9744 | test_acc 0.8932
+epoch  115/200 | loss 0.0682 | train_acc 0.9767 | test_acc 0.9106
+epoch  116/200 | loss 0.0712 | train_acc 0.9763 | test_acc 0.9154
+epoch  117/200 | loss 0.0672 | train_acc 0.9768 | test_acc 0.9039
+epoch  118/200 | loss 0.0659 | train_acc 0.9780 | test_acc 0.9165
+epoch  119/200 | loss 0.0690 | train_acc 0.9772 | test_acc 0.9059
+epoch  120/200 | loss 0.0588 | train_acc 0.9813 | test_acc 0.9149
+epoch  121/200 | loss 0.0632 | train_acc 0.9789 | test_acc 0.9099
+epoch  122/200 | loss 0.0561 | train_acc 0.9815 | test_acc 0.9221 <-- BEST (epoch 122, test_acc 0.9221)
+epoch  123/200 | loss 0.0569 | train_acc 0.9811 | test_acc 0.9096
+epoch  124/200 | loss 0.0559 | train_acc 0.9809 | test_acc 0.9225 <-- BEST (epoch 124, test_acc 0.9225)
+epoch  125/200 | loss 0.0519 | train_acc 0.9824 | test_acc 0.9243 <-- BEST (epoch 125, test_acc 0.9243)
+epoch  126/200 | loss 0.0508 | train_acc 0.9829 | test_acc 0.9183
+epoch  127/200 | loss 0.0496 | train_acc 0.9835 | test_acc 0.9231
+epoch  128/200 | loss 0.0520 | train_acc 0.9824 | test_acc 0.9204
+epoch  129/200 | loss 0.0471 | train_acc 0.9847 | test_acc 0.9232
+epoch  130/200 | loss 0.0417 | train_acc 0.9861 | test_acc 0.9243
+epoch  131/200 | loss 0.0433 | train_acc 0.9860 | test_acc 0.9257 <-- BEST (epoch 131, test_acc 0.9257)
+epoch  132/200 | loss 0.0428 | train_acc 0.9863 | test_acc 0.9127
+epoch  133/200 | loss 0.0441 | train_acc 0.9849 | test_acc 0.9187
+epoch  134/200 | loss 0.0384 | train_acc 0.9878 | test_acc 0.9187
+epoch  135/200 | loss 0.0377 | train_acc 0.9878 | test_acc 0.9132
+epoch  136/200 | loss 0.0342 | train_acc 0.9886 | test_acc 0.9170
+epoch  137/200 | loss 0.0309 | train_acc 0.9902 | test_acc 0.9230
+epoch  138/200 | loss 0.0300 | train_acc 0.9905 | test_acc 0.9192
+epoch  139/200 | loss 0.0414 | train_acc 0.9868 | test_acc 0.9169
+epoch  140/200 | loss 0.0302 | train_acc 0.9902 | test_acc 0.9292 <-- BEST (epoch 140, test_acc 0.9292)
+epoch  141/200 | loss 0.0223 | train_acc 0.9930 | test_acc 0.9300 <-- BEST (epoch 141, test_acc 0.9300)
+epoch  142/200 | loss 0.0202 | train_acc 0.9939 | test_acc 0.9250
+epoch  143/200 | loss 0.0298 | train_acc 0.9903 | test_acc 0.9337 <-- BEST (epoch 143, test_acc 0.9337)
+epoch  144/200 | loss 0.0190 | train_acc 0.9944 | test_acc 0.9330
+epoch  145/200 | loss 0.0189 | train_acc 0.9944 | test_acc 0.9330
+epoch  146/200 | loss 0.0181 | train_acc 0.9945 | test_acc 0.9297
+epoch  147/200 | loss 0.0160 | train_acc 0.9953 | test_acc 0.9302
+epoch  148/200 | loss 0.0136 | train_acc 0.9960 | test_acc 0.9333
+epoch  149/200 | loss 0.0136 | train_acc 0.9959 | test_acc 0.9336
+epoch  150/200 | loss 0.0121 | train_acc 0.9965 | test_acc 0.9405 <-- BEST (epoch 150, test_acc 0.9405)
+epoch  151/200 | loss 0.0125 | train_acc 0.9964 | test_acc 0.9298
+epoch  152/200 | loss 0.0120 | train_acc 0.9965 | test_acc 0.9360
+epoch  153/200 | loss 0.0112 | train_acc 0.9968 | test_acc 0.9411 <-- BEST (epoch 153, test_acc 0.9411)
+epoch  154/200 | loss 0.0082 | train_acc 0.9978 | test_acc 0.9360
+epoch  155/200 | loss 0.0092 | train_acc 0.9975 | test_acc 0.9411
+epoch  156/200 | loss 0.0061 | train_acc 0.9987 | test_acc 0.9412 <-- BEST (epoch 156, test_acc 0.9412)
+epoch  157/200 | loss 0.0097 | train_acc 0.9973 | test_acc 0.9423 <-- BEST (epoch 157, test_acc 0.9423)
+epoch  158/200 | loss 0.0066 | train_acc 0.9985 | test_acc 0.9474 <-- BEST (epoch 158, test_acc 0.9474)
+epoch  159/200 | loss 0.0042 | train_acc 0.9993 | test_acc 0.9462
+epoch  160/200 | loss 0.0044 | train_acc 0.9992 | test_acc 0.9448
+epoch  161/200 | loss 0.0039 | train_acc 0.9994 | test_acc 0.9446
+epoch  162/200 | loss 0.0030 | train_acc 0.9996 | test_acc 0.9497 <-- BEST (epoch 162, test_acc 0.9497)
+epoch  163/200 | loss 0.0023 | train_acc 0.9998 | test_acc 0.9497
+epoch  164/200 | loss 0.0025 | train_acc 0.9996 | test_acc 0.9480
+epoch  165/200 | loss 0.0023 | train_acc 0.9998 | test_acc 0.9516 <-- BEST (epoch 165, test_acc 0.9516)
+epoch  166/200 | loss 0.0020 | train_acc 0.9999 | test_acc 0.9511
+epoch  167/200 | loss 0.0021 | train_acc 0.9998 | test_acc 0.9513
+epoch  168/200 | loss 0.0018 | train_acc 0.9999 | test_acc 0.9524 <-- BEST (epoch 168, test_acc 0.9524)
+epoch  169/200 | loss 0.0018 | train_acc 0.9999 | test_acc 0.9532 <-- BEST (epoch 169, test_acc 0.9532)
+epoch  170/200 | loss 0.0019 | train_acc 0.9999 | test_acc 0.9531
+epoch  171/200 | loss 0.0016 | train_acc 1.0000 | test_acc 0.9531
+epoch  172/200 | loss 0.0016 | train_acc 1.0000 | test_acc 0.9532
+epoch  173/200 | loss 0.0017 | train_acc 0.9999 | test_acc 0.9548 <-- BEST (epoch 173, test_acc 0.9548)
+epoch  174/200 | loss 0.0016 | train_acc 1.0000 | test_acc 0.9532
+epoch  175/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9527
+epoch  176/200 | loss 0.0016 | train_acc 0.9999 | test_acc 0.9545
+epoch  177/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9551 <-- BEST (epoch 177, test_acc 0.9551)
+epoch  178/200 | loss 0.0016 | train_acc 0.9999 | test_acc 0.9533
+epoch  179/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9533
+epoch  180/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9536
+epoch  181/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9531
+epoch  182/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9541
+epoch  183/200 | loss 0.0014 | train_acc 1.0000 | test_acc 0.9541
+epoch  184/200 | loss 0.0017 | train_acc 0.9999 | test_acc 0.9545
+epoch  185/200 | loss 0.0016 | train_acc 1.0000 | test_acc 0.9543
+epoch  186/200 | loss 0.0016 | train_acc 1.0000 | test_acc 0.9527
+epoch  187/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9530
+epoch  188/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9536
+epoch  189/200 | loss 0.0014 | train_acc 1.0000 | test_acc 0.9541
+epoch  190/200 | loss 0.0014 | train_acc 1.0000 | test_acc 0.9545
+epoch  191/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9543
+epoch  192/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9542
+epoch  193/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9534
+epoch  194/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9538
+epoch  195/200 | loss 0.0014 | train_acc 1.0000 | test_acc 0.9529
+epoch  196/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9541
+epoch  197/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9541
+epoch  198/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9544
+epoch  199/200 | loss 0.0015 | train_acc 1.0000 | test_acc 0.9543
+epoch  200/200 | loss 0.0014 | train_acc 1.0000 | test_acc 0.9541
+------------------------------------------------------------
+[2026-05-29 07:46:23] Training finished
+best epoch : 177
+best test acc : 0.9551
