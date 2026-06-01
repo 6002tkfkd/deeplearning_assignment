@@ -10,13 +10,47 @@
 
 ## 2. 실험 환경
 
+**데이터 및 모델**
+
 | 항목 | 내용 |
 |---|---|
 | 데이터셋 | CIFAR-10 (train 50,000 / test 10,000) |
 | Backbone | ResNet18 (기본), ResNet34, ResNet50 비교 |
-| 학습 epochs | 200 (SimCLR pretraining) |
+| Projection Head | 2-layer MLP (hidden 2048 → output 128) |
+| 학습 Epochs | 200 (SimCLR pretraining) |
 | 평가 방법 | Linear Probe, KNN (k=1,5,10,20,200) |
 | Feature 분석 지표 | Effective Rank, Dead Dimensions, Silhouette Score, Davies-Bouldin Index, Uniformity |
+
+**SimCLR Pretraining 하이퍼파라미터**
+
+| 항목 | 값 |
+|---|---|
+| Optimizer | SGD (momentum=0.9) |
+| Learning Rate | 0.03 |
+| Weight Decay | 1e-4 |
+| LR Scheduler | CosineAnnealingLR (T\_max=200, η\_min=0) |
+| Batch Size | 256 |
+| Temperature (τ) | 0.07 |
+| Augmentation | RandomResizedCrop(32) + ColorJitter(s=1.0) + RandomHorizontalFlip + RandomGrayscale |
+
+**Linear Probe 하이퍼파라미터**
+
+| 항목 | 값 |
+|---|---|
+| Optimizer | Adam (weight\_decay=0) |
+| Learning Rate | 1e-3 |
+| LR Scheduler | CosineAnnealingLR |
+| Epochs | 100 |
+
+**Supervised Baseline 하이퍼파라미터**
+
+| 항목 | 값 |
+|---|---|
+| Optimizer | SGD (momentum=0.9) |
+| Learning Rate | 0.1 |
+| Weight Decay | 5e-4 |
+| LR Scheduler | CosineAnnealingLR (T\_max=200) |
+| Epochs | 200 |
 
 **평가 지표 설명:**
 - **Linear Probe Accuracy**: backbone을 freeze하고 linear classifier만 학습. representation 품질의 핵심 지표
